@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #navbar {
+            width: 100%;
+
+            height: 100px;
+            background-color: lightblue;
+        }
+
+        #navbar>img {
+            width: 10%;
+        }
+
+        .options {
+            height: 50px;
+            width: 50%;
+            margin-left: 450px;
+            margin-bottom: 400px;
+            margin-top: -59px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #one {
+            height: 500px;
+            width: 100%;
+
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            background: linear-gradient(rgb(66, 192, 235), rgb(46, 167, 197));
+        }
+
+        #one>div {
+            height: 100%;
+            width: 46%;
+
+            text-align: left;
+            padding-top: 100px;
+        }
+
+        #one>div>h3 {
+            font-size: 40px;
+            font-weight: 190;
+        }
+
+        #one>div>p {
+            font-size: 20px;
+            font-weight: 190;
+        }
+
+        #one>div>button {
+            font-size: 20px;
+            font-weight: 190;
+            border-radius: 5px;
+            width: 120px;
+            height: 50px;
+            border: none;
+            background-color: rgb(12, 11, 11);
+            color: white;
+        }
+
+        #one>div>button:hover {
+            cursor: pointer;
+        }
+
+        #two {
+            width: 100%;
+            height: 500px;
+
+            margin-top: 30px;
+            text-align: center;
+            background-color: antiquewhite;
+            padding-top: 30px;
+        }
+        #two>div>h3{
+            font-size: 40px;
+        }
+        #two>div>p{
+            font-size: 15px;
+            font-weight: lighter;
+            padding-top: 15px;
+        }
+        #two>div>button{
+            width: 100px;
+            height: 40px;
+            font-size: 15px;
+            border-radius: 5px;
+            border: none;
+            background-color: black;
+            color: white;
+          margin-top: 10px;
+        }
+
+        #three {
+            text-align: center;
+
+            gap: 10px;
+            grid-template-columns: repeat(2, 1fr);
+            display: grid;
+
+            width: 100%;
+            height: 700px;
+
+        }
+
+        #three>div {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        #three>div:nth-child(1) {
+            background-color: rgb(243, 237, 237);
+        }
+
+        #three>div:nth-child(2) {
+            background-color: rgb(255, 254, 254);
+        }
+
+        #three>div:nth-child(3) {
+            background-color: black;
+            color: white;
+        }
+
+        #three>div:nth-child(3)>img {
+            margin-top: 50px;
+            border-radius: 10%;
+        }
+
+        #three>div:nth-child(4) {
+            background-color: #d8d9da;
+           padding-bottom: 0px;
+        }
+        #four{
+            width: 100%;
+            height: 600px;
+            padding-top: 200px;
+            
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+
+        <img src="C:\Users\hp\Desktop\amusing-move-2303\Copy of FIT PEOPLE.png" alt="">
+
+
+        <div class="options">
+            <p>Workouts</p>
+            <p>Programs</p>
+            <p>Healthy Living</p>
+            <p>community</p>
+            <p>About</p>
+        </div>
+
+    </div>
+    <div id="one">
+        <div>
+            <h3>Feel Great.
+                Body and Mind</h3>
+            <p>Choose from hundreds of workouts, healthy recipes, relaxing meditations, and expert articles, for a whole
+                body and mind approach to feeling great.</p>
+            <button>Join Now</button>
+        </div>
+        <div>
+            <img width="100%" height="60%" src="https://cloudfront.fitnessblender.com/assets/img/homepage/team-720.webp"
+                alt="">
+        </div>
+    </div>
+    <div id="two">
+        <div>
+            <h3>
+                Introducing <br>
+                FB Plus Passes
+            </h3>
+            <p>
+                Passes give you full access to everything FB Plus has <br> to offer, without a long-term subscription.
+                Choose a <br> pass that fits your budget and your schedule.
+            </p>
+            <button>
+                Buy a Pass
+            </button>
+
+
+
+
+        </div>
+        <div>
+            <img src="https://cloudfront.fitnessblender.com/assets/img/homepage/passes-720.webp" alt="">
+        </div>
+
+    </div>
+    <div id="three">
+        <div>
+            <h3>Workout Videos</h3>
+            <a class="link" href="https://www.fitnessblender.com/videos">Find a Workout</a>
+            <p>Exercise with certified personal trainers whether you’re <br> at home or on the road.</p>
+
+            <img width="100%" src="https://cloudfront.fitnessblender.com/assets/img/homepage/workouts-720.webp" alt="">
+
+        </div>
+        <div>
+            <h3>Programs</h3>
+            <p>Professionally designed programs take the guesswork <br> out of exercising.</p>
+            <img width="100%" src="https://cloudfront.fitnessblender.com/assets/img/homepage/programs-720.webp" alt="">
+        </div>
+        <div>
+            <h3>Wellness Articles</h3>
+            <p>Research-backed articles to help you care for your <br> body and mind.</p>
+            <img width="100%" src="https://cloudfront.fitnessblender.com/assets/img/homepage/articles-720.webp" alt="">
+        </div>
+        <div>
+            <h3>Workout Videos</h3>
+            <p>Exercise with certified personal trainers whether you’re <br> at home or on the road.</p>
+            <img width="100%" src="https://cloudfront.fitnessblender.com/assets/img/homepage/recipes-720.webp" alt="">
+        </div>
+
+    </div>
+    <div id="four">
+        <div>
+            <h1>Supportive Community</h1>
+            <p>Stay motivated and engaged with a little help from a <br>supportive community of other members</p>
+            <a href="">Become a Member</a>
+        </div>
+        <div>
+            <img width="100%"src="https://cloudfront.fitnessblender.com/assets/img/homepage/community-1440.webp" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
