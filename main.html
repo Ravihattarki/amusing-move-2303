@@ -15,7 +15,7 @@
         #navbar {
             width: 100%;
 
-            height: 100px;
+            height: 80px;
             background-color: lightblue;
         }
 
@@ -85,15 +85,18 @@
             background-color: antiquewhite;
             padding-top: 30px;
         }
-        #two>div>h3{
+
+        #two>div>h3 {
             font-size: 40px;
         }
-        #two>div>p{
+
+        #two>div>p {
             font-size: 15px;
             font-weight: lighter;
             padding-top: 15px;
         }
-        #two>div>button{
+
+        #two>div>button {
             width: 100px;
             height: 40px;
             font-size: 15px;
@@ -101,7 +104,7 @@
             border: none;
             background-color: black;
             color: white;
-          margin-top: 10px;
+            margin-top: 10px;
         }
 
         #three {
@@ -140,14 +143,90 @@
 
         #three>div:nth-child(4) {
             background-color: #d8d9da;
-           padding-bottom: 0px;
+            padding-bottom: 0px;
         }
-        #four{
+
+        #four {
             width: 100%;
             height: 600px;
             padding-top: 200px;
-            
+
             text-align: center;
+        }
+
+        #five {
+            width: 100%;
+            height: 500px;
+
+            margin-top: 190px;
+            background-color: #f0f4f6;
+            ;
+        }
+
+        #five>div:nth-child(2) {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 30px;
+
+            align-items: flex-end;
+
+        }
+
+        #five>div>div>h4 {
+            -webkit-font-smoothing: antialiased;
+            font-size: 100%;
+            font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            padding-top: 10px;
+        }
+
+        #five>div>div>p {
+            -webkit-font-smoothing: antialiased;
+            font-size: 100%;
+            font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+        }
+
+        #five>div>div>img {
+            padding-top: 10px;
+        }
+
+        .footer {
+            background-color: #24262b;
+            padding: 70px 0;
+        }
+
+        .footer-col {
+            width: 25%;
+            padding: 0 15px;
+            color: white;
+        }
+
+        .footer-col h4 {
+            font-size: 18px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            color:white;
+        }
+
+        .container {
+            max-width: 1170px;
+
+            margin: auto;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        #navbar>img {
+            border-radius: 100px;
+        }
+        #navbar>h2{
+            padding-left: 140px;
+           margin-top: -40px;
         }
     </style>
 </head>
@@ -155,8 +234,9 @@
 <body>
     <div id="navbar">
 
-        <img src="C:\Users\hp\Desktop\amusing-move-2303\Copy of FIT PEOPLE.png" alt="">
-
+       
+        <img height="100%" src="C:\Users\hp\Desktop\amusing-move-2303\Copy of FIT PEOPLE.png" alt="">
+         <h2>body grinder</h2>
 
         <div class="options">
             <p>Workouts</p>
@@ -190,8 +270,8 @@
                 Passes give you full access to everything FB Plus has <br> to offer, without a long-term subscription.
                 Choose a <br> pass that fits your budget and your schedule.
             </p>
-            <button>
-                Buy a Pass
+            <button><a href="pass.html">Buy a Pass</a>
+                
             </button>
 
 
@@ -236,9 +316,86 @@
             <a href="">Become a Member</a>
         </div>
         <div>
-            <img width="100%"src="https://cloudfront.fitnessblender.com/assets/img/homepage/community-1440.webp" alt="">
+            <img width="100%" src="https://cloudfront.fitnessblender.com/assets/img/homepage/community-1440.webp"
+                alt="">
         </div>
     </div>
+    <div id="five">
+        <div>
+            <h2>Not Sure Where To Start?</h2>
+            <p>Programs offer day-to-day guidance on an interactive calendar to keep you on track.</p>
+        </div>
+        <div>
+            <div>
+                <p>Perfect for Beginners</p>
+                <img src="https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-o_31_fb-low-impact-round-2-fat-loss-program-40-minutes-or-less.jpg"
+                    alt="">
+                <h4>FB low impact Round 2-Build <br>muscles & Burn fat-40 minutes or Less</h4>
+            </div>
+            <div>
+                <p>You Choose</p>
+                <img src="https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-o_29_4-week-fb-blend-burn-fat-build-muscle-tone-35-or-55-minutes-a-day.jpg"
+                    alt="">
+                <h4>FB Blend-Burn fat,Build muscle,<br>tone;35 or 55 minutes a day</h4>
+            </div>
+            <div>
+                <p>Short on time?</p>
+                <img src="https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-o_28_fb-30-4-week-fat-loss-program-for-busy-people-round-4.jpg"
+                    alt="">
+                <h4>FB 30-Fat loss Program for <br> Busy People (Round 4)</h4>
+            </div>
+            <div>
+                <p>No Equipment Necessary</p>
+                <img src="https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-o_7_fb-bodyweight-bodyweight-only-fat-loss-program.jpg"
+                    alt="">
+                <h4>FB Bodyweight-Bodyweight <br>only Fat loss Program</h4>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Workouts</h4>
+                    <ul>
+                        <li><a href="#">Workout videos</a></li>
+                        <li><a href="#">custom workouts</a></li>
+                        <li><a href="#">shoe</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>workout videos</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">return</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment check</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-link">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
