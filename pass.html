@@ -9,7 +9,6 @@
         #container{
             width: 100%;
             height: 600px;
-            border: 1px solid red;
             display: grid;
             grid-template-columns: repeat(4,1fr);
              
@@ -23,36 +22,109 @@
         }
         .container-child>div{
             width:20%;
+        }
+        #container>div>button{
+            background-color: cornflowerblue;
+            border: none;
+            height: 30px;
+            border-radius: 10px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-           
-            
-            
+        #navbar {
+            width: 100%;
 
+            height: 80px;
+            background-color: lightblue;
+        }
+
+        #navbar>img {
+            width: 10%;
+        }
+        .options {
+            height: 50px;
+            width: 50%;
+            margin-left: 450px;
+            margin-bottom: 400px;
+            margin-top: -59px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #navbar>img {
+            border-radius: 100px;
+        }
+        #navbar>h2{
+            padding-left: 140px;
+           margin-top: -40px;
         }
     </style>
 </head>
-<body>
+<body> <div id="navbar">
+
+       
+    <img height="100%" src="C:\Users\hp\Desktop\amusing-move-2303\Copy of FIT PEOPLE.png" alt="">
+     <h2>body grinder</h2>
+
+    <div class="options">
+        <p>Workouts</p>
+        <p>Programs</p>
+        <p>Healthy Living</p>
+        <p>community</p>
+        <p>About</p>
+    </div>
+
+</div>
     <div id="container">
         
-            <div>
+            <div class="pass">
                  <img height="50%" width="250%" src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-16-1-day-pass-a272.jpg" alt="">
                   <p>FB plus pass</p>
                   <h5>1 Day Pass</h5>
+                  <button onclick="addtocart(items)">Add to bag</button>
             
                 </div>
-            <div>
+            <div class="pass">
                 <img height="50%"width="250%"src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-15-7-day-pass-8070.jpg" alt="">
+                <p>FB plus pass</p>
+                  <h5>7 Day Pass</h5>
+                  <button onclick="addtocart(items)">Add to bag</button>
             </div>
-            <div>
+            <div class="pass">
                 <img height="50%"width="250%"src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-14-14-day-pass-b885.jpg" alt="">
+                <p>FB plus pass</p>
+                <h5>14 Day Pass</h5>
+                <button onclick="addtocart(items)">Add to bag</button>
             </div>
-            <div>
+            <div class="pass">
                 <img height="50%"width="250%"src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-13-30-day-pass-9318.jpg" alt="">
+                <p>FB plus pass</p>
+                <h5>30 Day Pass</h5>
+                <button onclick="addtocart(items)">Add to bag</button>
             </div>
-            <div>
+            <div class="pass">
                 <img height="50%"width="250%"src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-12-90-day-pass-89f6.jpg" alt="">
+                <p>FB plus pass</p>
+                <h5>90 Day Pass</h5>
+                <button onclick="addtocart(items)">Add to bag</button>
             </div>
         
     </div>
 </body>
 </html>
+<script>
+    var additemid=0
+    function addtocart(items){
+        additemid+=1;
+        var selecteditem=document.createElement("div");
+        selecteditem.classList.add("cartimg");
+        selecteditem.setAttribute("id",additemid);
+        var img=document.createElement("img");
+        img.setAttribute("src",items.pass)
+        var cartitems=document.querySelector(".pass");
+        cartitems.append(selecteditem);
+
+    }
+</script>
